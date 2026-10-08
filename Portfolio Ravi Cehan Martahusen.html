@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi Cehan Martahusen, S.H., C.Med. - Legal Profile & CV</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f0f4f8',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#080d1a',
+                        },
+                        amber: {
+                            600: '#d97706',
+                            700: '#b45309',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Subtle Motif & Styles -->
+    <style>
+        body {
+            background-color: #ffffff;
+            background-image: 
+                radial-gradient(circle at 1px 1px, rgba(15, 23, 42, 0.04) 1px, transparent 0),
+                linear-gradient(to right, rgba(217, 119, 6, 0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(15, 23, 42, 0.02) 1px, transparent 1px);
+            background-size: 24px 24px, 48px 48px, 48px 48px;
+            color: #1e293b;
+        }
+
+        .watermark-motif {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l30 30-30 30L0 30z' fill='%200f172a' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.85);
+            box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.04);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #b45309 0%, #d97706 50%, #78350f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-slate-800 selection:bg-amber-100 selection:text-amber-900">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-lg bg-navy-900 flex items-center justify-center text-amber-500 font-serif font-bold text-xl shadow-md group-hover:bg-amber-600 group-hover:text-white transition-colors duration-300">
+                    R
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-slate-900 text-lg tracking-wide block leading-tight">Ravi Cehan M.</span>
+                    <span class="text-xs text-amber-700 font-semibold tracking-wider uppercase block">S.H., C.Med.</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-amber-600 transition-colors">About</a>
+                <a href="#firm" class="hover:text-amber-600 transition-colors">Law Office</a>
+                <a href="#expertise" class="hover:text-amber-600 transition-colors">My Practice Areas</a>
+                <a href="#experience" class="hover:text-amber-600 transition-colors">Experience</a>
+                <a href="#works" class="hover:text-amber-600 transition-colors">Legal Drafts</a>
+                <a href="#credentials" class="hover:text-amber-600 transition-colors">Credentials</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-lg bg-navy-900 text-amber-400 font-semibold hover:bg-slate-800 transition-all border border-amber-600/30">
+                    Contact Me
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-700 hover:text-navy-900 p-2 text-2xl focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-5 space-y-4 shadow-xl">
+            <a href="#about" class="block text-slate-700 hover:text-amber-600 font-medium">About</a>
+            <a href="#firm" class="block text-slate-700 hover:text-amber-600 font-medium">Law Office</a>
+            <a href="#expertise" class="block text-slate-700 hover:text-amber-600 font-medium">My Practice Areas</a>
+            <a href="#experience" class="block text-slate-700 hover:text-amber-600 font-medium">Experience</a>
+            <a href="#works" class="block text-slate-700 hover:text-amber-600 font-medium">Legal Drafts</a>
+            <a href="#credentials" class="block text-slate-700 hover:text-amber-600 font-medium">Credentials</a>
+            <a href="#contact" class="block text-center w-full py-3 rounded-lg bg-navy-900 text-amber-400 font-semibold">Contact Me</a>
+        </div>
+    </header>
+
+    <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-28 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-amber-700 font-medium text-xs sm:text-sm shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-amber-600 animate-pulse"></span>
+                        <span>Junior Associate @ Raden Elang Mulyana Law Office</span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-tight">
+                        Ravi Cehan Martahusen, <span class="gold-gradient-text">S.H., C.Med.</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Law Graduate (Cum Laude, IPK 3.65) from Universitas Diponegoro & Supreme Court Certified Mediator. Currently serving as a Junior Associate specializing in <strong>Criminal Defense, Civil & Administrative Law, Employment & Labor Law, Commercial Law, and Mediation & Dispute Resolution</strong>.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-3">
+                        <a href="mailto:ravicehanmartahusen@gmail.com" class="px-6 py-3 rounded-lg bg-navy-900 text-white font-medium hover:bg-slate-800 transition-all text-sm flex items-center space-x-2 shadow-sm">
+                            <i class="fa-solid fa-envelope text-amber-400"></i>
+                            <span>Email Me</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ravi-cehan-martahusen" target="_blank" rel="noopener" class="px-6 py-3 rounded-lg bg-white border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 transition-all text-sm flex items-center space-x-2 shadow-sm">
+                            <i class="fa-brands fa-linkedin text-blue-600"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                    </div>
+
+                    <!-- Personal Practice Pills -->
+                    <div class="pt-6 border-t border-slate-200/80">
+                        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-3">Individual Practice Focus</span>
+                        <div class="flex flex-wrap gap-2 justify-center lg:justify-start">
+                            <span class="px-3 py-1 rounded-md bg-amber-50 text-amber-800 border border-amber-200 text-xs font-medium"><i class="fa-solid fa-shield-halved mr-1 text-amber-600"></i> Criminal Defense</span>
+                            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-800 border border-slate-200 text-xs font-medium"><i class="fa-solid fa-scale-balanced mr-1 text-amber-600"></i> Civil & Administrative Law</span>
+                            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-800 border border-slate-200 text-xs font-medium"><i class="fa-solid fa-user-gear mr-1 text-amber-600"></i> Employment & Labor Law</span>
+                            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-800 border border-slate-200 text-xs font-medium"><i class="fa-solid fa-building-columns mr-1 text-amber-600"></i> Commercial Law</span>
+                            <span class="px-3 py-1 rounded-md bg-amber-50 text-amber-800 border border-amber-200 text-xs font-medium"><i class="fa-solid fa-handshake mr-1 text-amber-600"></i> Mediation & Dispute Resolution</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Profile Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="glass-card rounded-2xl p-8 border border-slate-200 shadow-lg text-slate-800">
+                            <div class="flex items-center space-x-4 mb-6 pb-6 border-b border-slate-200">
+                                <div class="w-16 h-16 rounded-full bg-navy-900 text-amber-400 font-serif font-bold text-2xl flex items-center justify-center shadow-md">
+                                    RC
+                                </div>
+                                <div>
+                                    <h3 class="font-serif font-bold text-slate-900 text-lg">Ravi Cehan Martahusen</h3>
+                                    <p class="text-xs text-amber-700 font-semibold tracking-wide uppercase">S.H., C.Med.</p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4 text-sm">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fa-solid fa-briefcase text-amber-600 mt-1"></i>
+                                    <div>
+                                        <span class="text-slate-400 text-xs block font-medium">Position</span>
+                                        <span class="font-semibold text-slate-800">Junior Associate</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fa-solid fa-building text-amber-600 mt-1"></i>
+                                    <div>
+                                        <span class="text-slate-400 text-xs block font-medium">Affiliated Law Office</span>
+                                        <span class="font-semibold text-slate-800">Raden Elang Mulyana Law Office</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fa-solid fa-graduation-cap text-amber-600 mt-1"></i>
+                                    <div>
+                                        <span class="text-slate-400 text-xs block font-medium">Education</span>
+                                        <span class="font-semibold text-slate-800">S.H. - Universitas Diponegoro (Cum Laude, GPA 3.65)</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <i class="fa-solid fa-certificate text-amber-600 mt-1"></i>
+                                    <div>
+                                        <span class="text-slate-400 text-xs block font-medium">Accreditation</span>
+                                        <span class="font-semibold text-slate-800">Certified Mediator (Supreme Court & BNSP)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-6 pt-6 border-t border-slate-200">
+                                <a href="mailto:ravicehanmartahusen@gmail.com" class="w-full py-3 px-4 rounded-lg bg-navy-900 hover:bg-slate-800 text-amber-400 font-semibold text-sm transition-all flex items-center justify-center space-x-2">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    <span>Send Email Direct</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-slate-50/70 border-y border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <span class="text-amber-700 font-semibold text-xs tracking-widest uppercase block mb-2">Executive Summary</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">About Me</h2>
+                <div class="w-16 h-1 bg-amber-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-7 space-y-5 text-slate-600 leading-relaxed text-base">
+                    <p class="text-lg text-slate-900 font-medium">
+                        I am a law graduate from Universitas Diponegoro (Graduated Cum Laude with a 3.65 GPA) and a Supreme Court-certified mediator (C.Med.), currently serving as a <strong class="text-slate-900">Junior Associate at Raden Elang Mulyana Law Office</strong>.
+                    </p>
+                    <p>
+                        My professional focus centers on five key practice areas: <strong>Criminal Defense, Civil & Administrative Law, Employment & Labor Law, Commercial Law, and Mediation & Dispute Resolution</strong>.
+                    </p>
+                    <p>
+                        Prior to joining the firm, I accumulated intensive hands-on legal experience through internships at the <strong>Attorney General’s Office of Indonesia (Kejaksaan Agung RI - Pidsus Unit)</strong>, working on landmark high-profile corruption, bribery, and state asset recovery cases, as well as holding leadership roles in student government and procedural law organizations.
+                    </p>
+                </div>
+
+                <!-- Fast Facts Card -->
+                <div class="lg:col-span-5 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                    <h3 class="font-serif font-bold text-slate-900 text-xl border-b border-slate-100 pb-3">Key Qualifications</h3>
+                    
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-check-circle text-amber-600"></i>
+                            <span class="text-slate-700"><strong>Cum Laude Graduate</strong> (IPK 3.65 - FH UNDIP)</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-check-circle text-amber-600"></i>
+                            <span class="text-slate-700"><strong>Certified Mediator</strong> (Supreme Court & BNSP)</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-check-circle text-amber-600"></i>
+                            <span class="text-slate-700"><strong>PKPA Graduate</strong> (PERATIN) & Court Training (PERADI)</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-check-circle text-amber-600"></i>
+                            <span class="text-slate-700"><strong>Ex-Intern @ Kejaksaan Agung RI</strong> (Pidsus)</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-check-circle text-amber-600"></i>
+                            <span class="text-slate-700"><strong>TOEFL Certified</strong> (Score: 577)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="firm" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-2xl p-8 sm:p-12 border border-slate-200 shadow-md">
+                <div class="max-w-4xl">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-100 text-amber-700 text-xs font-semibold uppercase tracking-wider mb-4 border border-slate-200">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>Law Firm Affiliation</span>
+                    </div>
+
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+                        Raden Elang Mulyana Law Office
+                    </h2>
+
+                    <p class="text-slate-600 leading-relaxed mb-6 text-base">
+                        At <strong>Raden Elang Mulyana Law Office</strong>, where I serve as a <strong>Junior Associate</strong>, the firm's core institutional practice areas cover:
+                    </p>
+
+                    <!-- Firm Core Areas -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                            <i class="fa-solid fa-shield-halved text-amber-600 text-2xl mb-2"></i>
+                            <h4 class="font-serif font-bold text-slate-900 text-base">Criminal Defense</h4>
+                            <p class="text-xs text-slate-500 mt-1">Litigation and legal representation in criminal matters.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                            <i class="fa-solid fa-users-gear text-amber-600 text-2xl mb-2"></i>
+                            <h4 class="font-serif font-bold text-slate-900 text-base">Manpower Litigation</h4>
+                            <p class="text-xs text-slate-500 mt-1">Labor court disputes & employment relations.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                            <i class="fa-solid fa-check-to-slot text-amber-600 text-2xl mb-2"></i>
+                            <h4 class="font-serif font-bold text-slate-900 text-base">Election Disputes</h4>
+                            <p class="text-xs text-slate-500 mt-1">Constitutional court & electoral conflict resolution.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-5 rounded-xl bg-amber-50/60 border border-amber-200 text-slate-700 text-sm">
+                        <i class="fa-solid fa-circle-info text-amber-700 mr-2"></i>
+                        As a Junior Associate at the firm, I contribute directly to criminal defense and manpower matters while expanding my individual practice to civil, commercial, administrative, and certified mediation domains.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="py-20 bg-slate-50/60 border-t border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-700 font-semibold text-xs tracking-widest uppercase block mb-2">Legal Competencies</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">My Individual Practice Areas</h2>
+                <p class="text-slate-600 mt-3 text-base">Specific areas of law in which I deliver legal advisory, research, drafting, and dispute resolution.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Area 1 -->
+                <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-slate-900 text-xl mb-3">Criminal Defense</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Assisting in criminal defense strategy, police interrogation accompaniment, case file analysis, and court proceedings across general and special criminal offenses.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-1.5">
+                        <li><i class="fa-solid fa-check text-amber-600 mr-1.5"></i> Special Criminal Offenses (Pidsus)</li>
+                        <li><i class="fa-solid fa-check text-amber-600 mr-1.5"></i> Defense Case Briefing & Strategy</li>
+                    </ul>
+                </div>
+
+                <!-- Area 2 -->
+                <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-slate-900 text-xl mb-3">Civil & Administrative Law</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Handling breach of contract (wanprestasi), tort/unlawful acts (PMH), property claims, and state administrative court (PTUN) dispute analysis.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-1.5">
+                        <li><i class="fa-solid fa-check text-amber-600 mr-1.5"></i> Civil Lawsuits & Defense Response</li>
+                        <li><i class="fa-solid fa-check text-amber-600 mr-1.5"></i> State Administrative Claims (PTUN)</li>
+                    </ul>
+                </div>
+
+                <!-- Area 3 -->
+                <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-user-gear"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-slate-900 text-xl mb-3">Employment & Labor Law</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Advising employers and workers on employment agreements, industrial relations disputes (PHI), termination compliance, and workplace negotiations.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-1.5">
+                        <li><i class="fa-solid fa-check text-amber-600 mr-1.5"></i> Industrial Relations Court (PHI)</li>
+                        <li><i class="fa-solid fa-check text-amber-600 mr-1.5"></i> Employment Contract Reviews</li>
+                    </ul>
+                </div>
+
+                <!-- Area 4 -->
+                <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-slate-900 text-xl mb-3">Commercial Law</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Drafting commercial contracts, non-disclosure agreements, joint venture terms, and reviewing business compliance under Indonesian statutory law.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-1.5">
+                        <li><i class="fa-solid fa-check text-amber-600 mr-1.5"></i> Commercial Contract Drafting</li>
+                        <li><i class="fa-solid fa-check text-amber-600 mr-1.5"></i> Corporate Legal Due Diligence</li>
+                    </ul>
+                </div>
+
+                <!-- Area 5 -->
+                <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all lg:col-span-2">
+                    <div class="w-12 h-12 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-slate-900 text-xl mb-3">Mediation & Alternative Dispute Resolution (C.Med.)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Supreme Court accredited mediation services (C.Med.) focused on interest-based negotiation, neutral caucus facilitation, and drafting binding peace agreements (Akta Perdamaian) to resolve civil and commercial conflicts without litigation.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-500">
+                        <div><i class="fa-solid fa-check text-amber-600 mr-1.5"></i> Court-Annexed & Private Mediation</div>
+                        <div><i class="fa-solid fa-check text-amber-600 mr-1.5"></i> Binding Peace Agreement Drafting</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-700 font-semibold text-xs tracking-widest uppercase block mb-2">Track Record</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Professional Experience</h2>
+                <div class="w-16 h-1 bg-amber-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto relative border-l-2 border-slate-200 pl-6 sm:pl-10 space-y-10">
+                
+                <!-- Experience Item 1 -->
+                <div class="relative">
+                    <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-navy-900 border-4 border-white text-amber-400 flex items-center justify-center text-xs"></div>
+                    <div class="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                            <div>
+                                <span class="px-2.5 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-semibold uppercase">Current Role</span>
+                                <h3 class="font-serif font-bold text-xl text-slate-900 mt-1">Junior Associate</h3>
+                                <p class="text-amber-700 font-semibold text-sm">Raden Elang Mulyana Law Office</p>
+                            </div>
+                            <span class="text-xs font-medium text-slate-500 mt-1 sm:mt-0">Sep 2026 - Present</span>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Actively handling case research, client consultations, court pleadings drafting, and contract reviews in criminal defense, labor litigation, commercial disputes, and civil matters.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="relative">
+                    <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-400 border-4 border-white text-white flex items-center justify-center text-xs"></div>
+                    <div class="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                            <div>
+                                <h3 class="font-serif font-bold text-xl text-slate-900">Intern Staff - Prosecution Unit (Pidsus)</h3>
+                                <p class="text-amber-700 font-semibold text-sm">Attorney General's Office of Indonesia (Kejaksaan Agung RI)</p>
+                            </div>
+                            <span class="text-xs font-medium text-slate-500 mt-1 sm:mt-0">Jan 2025 - Feb 2025</span>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Involved in prosecution analysis for major national corruption cases, including the PT Antam Tbk gold corruption investigation and the Surabaya District Court judge bribery case (Ronald Tannur case).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="relative">
+                    <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-400 border-4 border-white text-white flex items-center justify-center text-xs"></div>
+                    <div class="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                            <div>
+                                <h3 class="font-serif font-bold text-xl text-slate-900">Intern Staff - Investigation Unit (Pidsus)</h3>
+                                <p class="text-amber-700 font-semibold text-sm">Attorney General's Office of Indonesia (Kejaksaan Agung RI)</p>
+                            </div>
+                            <span class="text-xs font-medium text-slate-500 mt-1 sm:mt-0">Jul 2024 - Aug 2024</span>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Assisted senior prosecutors in evidence processing, witness deposition summaries, and asset seizure documentation for high-profile cases (PT Timah Tbk corruption & PT Antam Tbk).
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="py-20 bg-slate-50/60 border-t border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-700 font-semibold text-xs tracking-widest uppercase block mb-2">Legislative & Regulatory Drafting</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Featured Legal Drafts</h2>
+                <div class="w-16 h-1 bg-amber-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <div class="w-10 h-10 rounded-lg bg-navy-900 text-amber-400 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-scroll"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-slate-900 text-lg mb-2">Academic Naskah Akademik</h3>
+                    <p class="text-xs text-amber-700 font-semibold mb-2">PPO UNDIP 2017 (3rd Amendment)</p>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Authored the comprehensive academic paper and statutory provisions for the 3rd Amendment of Diponegoro University's Organizational Governance Rules.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <div class="w-10 h-10 rounded-lg bg-navy-900 text-amber-400 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-check-to-slot"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-slate-900 text-lg mb-2">Electoral Law Decree</h3>
+                    <p class="text-xs text-amber-700 font-semibold mb-2">Perma UNDIP No. 2 Year 2024</p>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Drafted the official student regulatory decree governing General Elections (PEMIRA) across all faculties at Diponegoro University.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <div class="w-10 h-10 rounded-lg bg-navy-900 text-amber-400 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-sitemap"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-slate-900 text-lg mb-2">Institutional Regulation</h3>
+                    <p class="text-xs text-amber-700 font-semibold mb-2">Perma UNDIP No. 1 Year 2024</p>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Formulated the framework regulation governing University Student Activity Units (UKM) structure, funding, and legal accountability.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="credentials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-700 font-semibold text-xs tracking-widest uppercase block mb-2">Certifications & Leadership</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Credentials & Organizations</h2>
+                <div class="w-16 h-1 bg-amber-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <!-- Certifications -->
+                <div class="bg-slate-50 rounded-xl p-8 border border-slate-200">
+                    <h3 class="font-serif font-bold text-slate-900 text-xl mb-6 flex items-center">
+                        <i class="fa-solid fa-certificate text-amber-600 mr-3"></i>
+                        Certifications & Education
+                    </h3>
+
+                    <ul class="space-y-4 text-sm">
+                        <li class="pb-3 border-b border-slate-200">
+                            <span class="font-bold text-slate-900 block">S.H. - Bachelor of Laws (Cum Laude, GPA 3.65)</span>
+                            <span class="text-slate-500 text-xs">Faculty of Law, Universitas Diponegoro</span>
+                        </li>
+                        <li class="pb-3 border-b border-slate-200">
+                            <span class="font-bold text-slate-900 block">Certified Mediator (C.Med.)</span>
+                            <span class="text-slate-500 text-xs">Accredited by Supreme Court RI & BNSP</span>
+                        </li>
+                        <li class="pb-3 border-b border-slate-200">
+                            <span class="font-bold text-slate-900 block">Advocate Specialization Course (PKPA)</span>
+                            <span class="text-slate-500 text-xs">PERATIN Legal Education</span>
+                        </li>
+                        <li class="pb-3 border-b border-slate-200">
+                            <span class="font-bold text-slate-900 block">Certified Court Practice Training</span>
+                            <span class="text-slate-500 text-xs">PERADI Court Advocacy Training</span>
+                        </li>
+                        <li>
+                            <span class="font-bold text-slate-900 block">Certified TOEFL (Score: 577)</span>
+                            <span class="text-slate-500 text-xs">English Proficiency Certification</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Leadership & Achievements -->
+                <div class="bg-slate-50 rounded-xl p-8 border border-slate-200">
+                    <h3 class="font-serif font-bold text-slate-900 text-xl mb-6 flex items-center">
+                        <i class="fa-solid fa-trophy text-amber-600 mr-3"></i>
+                        Leadership & Honors
+                    </h3>
+
+                    <ul class="space-y-4 text-sm">
+                        <li class="pb-3 border-b border-slate-200">
+                            <span class="font-bold text-slate-900 block">President (2025–2026)</span>
+                            <span class="text-slate-500 text-xs">Himpunan Mahasiswa Hukum Acara FH UNDIP</span>
+                        </li>
+                        <li class="pb-3 border-b border-slate-200">
+                            <span class="font-bold text-slate-900 block">Senator - Commission IV & Legislation</span>
+                            <span class="text-slate-500 text-xs">Student Senate Diponegoro University (2024–2025)</span>
+                        </li>
+                        <li class="pb-3 border-b border-slate-200">
+                            <span class="font-bold text-slate-900 block">3rd Place - Call for Poster Competition</span>
+                            <span class="text-slate-500 text-xs">National Criminal Law Seminar (ASPERHUPIKI & FH UNDIP 2025)</span>
+                        </li>
+                        <li>
+                            <span class="font-bold text-slate-900 block">Best Participant & Batch Leader</span>
+                            <span class="text-slate-500 text-xs">UNDIP Legislative Training 2024</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-50/70 border-t border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-slate-200 shadow-xl p-8 sm:p-12 text-center">
+                <span class="text-amber-700 font-semibold text-xs tracking-widest uppercase block mb-2">Connect Directly</span>
+                <h2 class="font-serif text-3xl font-bold text-slate-900 mb-4">Contact Ravi Cehan Martahusen</h2>
+                <p class="text-slate-600 text-sm max-w-xl mx-auto mb-8">
+                    Available for legal inquiries, commercial dispute mediation, contract drafting, or consultation regarding my practice areas.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto text-left">
+                    <a href="mailto:ravicehanmartahusen@gmail.com" class="p-6 rounded-xl bg-slate-50 border border-slate-200 hover:border-amber-500 transition-all group flex items-start space-x-4">
+                        <div class="w-12 h-12 rounded-lg bg-navy-900 text-amber-400 flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 font-medium block">Direct Email</span>
+                            <span class="font-semibold text-slate-900 text-sm group-hover:text-amber-700 break-all">ravicehanmartahusen@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/ravi-cehan-martahusen" target="_blank" rel="noopener" class="p-6 rounded-xl bg-slate-50 border border-slate-200 hover:border-amber-500 transition-all group flex items-start space-x-4">
+                        <div class="w-12 h-12 rounded-lg bg-blue-700 text-white flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 font-medium block">LinkedIn Profile</span>
+                            <span class="font-semibold text-slate-900 text-sm group-hover:text-amber-700">Ravi Cehan Martahusen</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-100 text-xs text-slate-500">
+                    Location: Serang City, Banten, Indonesia | Junior Associate @ Raden Elang Mulyana Law Office
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy-950 text-slate-400 py-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                <p class="font-serif font-bold text-white text-sm">Ravi Cehan Martahusen, S.H., C.Med.</p>
+                <p class="text-xs text-slate-500">Junior Associate at Raden Elang Mulyana Law Office</p>
+            </div>
+            <p class="text-xs text-slate-500">&copy; 2026 Ravi Cehan Martahusen. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
